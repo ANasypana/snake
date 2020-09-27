@@ -1,0 +1,5 @@
+{
+  "mongoURL": "mongodb+srv://allaN:qwe123456@snake.izcap.mongodb.net/players?retryWrites=true&w=majority",
+  "jwtSecret": "mySecretToken"
+
+}

@@ -1,0 +1,20 @@
+{"frames": [
+
+{
+	"filename": "apple1.png",
+	"frame": {"x":0,"y":0,"w":50,"h":44},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":44},
+	"sourceSize": {"w":50,"h":44}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "apple.png",
+	"format": "RGBA8888",
+	"size": {"w":50,"h":44},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:40e25ffc492d32d1fd06310b702fc549:751ba5983a96fee9875b88db5901234b:02331e7122bf2050c0b955cdc26b1b8e$"
+}
+}
