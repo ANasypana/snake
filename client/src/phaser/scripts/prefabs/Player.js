@@ -15,6 +15,18 @@ export default class Player extends GameObject{
             enemy: false,
         });
 
+        const frames = this.scene.anims.generateFrameNames("dragon", {
+            prefix: "dragon",
+            start: 1,
+            end: 6
+        });
+        this.scene.anims.create({
+            key: "fly",
+            frames,
+            frameRate: 10,
+            repeat: -1
+        });
+        this.play("fly");
     }
 
     isDead(){
