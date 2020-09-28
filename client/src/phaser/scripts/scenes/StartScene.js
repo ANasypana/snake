@@ -12,7 +12,6 @@ export default class StartScene extends Phaser.Scene{
         }
 
         if( data.score === undefined){
-            console.log(data)
             this.playerName = data.player.name || "";
             this.currentScores = data.player.scores || 0;
             this.currentLevel = data.player.level || 1;

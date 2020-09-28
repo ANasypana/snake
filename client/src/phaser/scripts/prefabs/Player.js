@@ -14,6 +14,7 @@ export default class Player extends GameObject{
             velocity: 500,
             enemy: false,
         });
+
     }
 
     isDead(){
@@ -29,19 +30,25 @@ export default class Player extends GameObject{
 
     move(){
         this.body.setVelocity(0);
-        if(this.scene.cursors.left.isDown){
+        if (this.scene.cursors.left.isDown) {
             this.body.setVelocityX(-this.velocity)
-        }else if(this.scene.cursors.right.isDown){
+        } else if (this.scene.cursors.right.isDown) {
             this.body.setVelocityX(this.velocity)
         }
 
-        if(this.scene.cursors.up.isDown){
+        if (this.scene.cursors.up.isDown) {
             this.body.setVelocityY(-this.velocity)
-        }else if(this.scene.cursors.down.isDown){
+        } else if (this.scene.cursors.down.isDown) {
             this.body.setVelocityY(this.velocity)
         }
-
     }
+
+    update(){
+        if(this.active && this.isDead() ){
+            this.reset()
+        }
+    }
+
 
 
 }
